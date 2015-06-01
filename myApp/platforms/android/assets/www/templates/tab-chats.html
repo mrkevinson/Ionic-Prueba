@@ -1,0 +1,18 @@
+<ion-view view-title="Chats">
+  <ion-content>
+<ion-item class="button button-full button-light" href="#/tab/add"><i class="ion-plus-round"></i> Invita a un amigo</ion-item>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.get('Imagen')}}">
+        <h2>{{chat.get('Nombre')}} ${{chat.get('Precio')}}</h2>
+        <p>{{chat.get('UltimoMensaje')}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat.id)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+    
+  </ion-content>
+</ion-view>

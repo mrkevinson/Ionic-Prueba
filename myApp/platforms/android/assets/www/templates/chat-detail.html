@@ -1,0 +1,13 @@
+
+<ion-view view-title="{{chat.get('Nombre')}}">
+  <ion-content class="padding">
+    <img ng-src="{{chat.get('Imagen')}}" style="width: 64px; height: 64px">
+    <p>
+      {{chat.get('UltimoMensaje')}}
+    </p>
+    <form method="POST">
+
+</form>
+	<a class="button button-full button-positive" href="#/tab/chats/buy/{{chat.id}}">Malgasta tu dinero en mi :D solo cuesto {{chat.get('Precio')}} dolares</a>
+  </ion-content>
+</ion-view>
