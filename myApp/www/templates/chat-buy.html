@@ -1,0 +1,62 @@
+<ion-view view-title="Add Chat">
+	<ion-content class="padding">
+		<form  method="POST" id="payment-form">
+			<br><br>
+		  <span class="payment-errors"></span>
+			<div class="list">
+				<div ng-hide="tarjeta">
+				<label class="item item-radio">
+					<input type="radio" name="group" ng-model="compra.radio" value="{{usuario.stripeCardId}}" checked ng-click='toggle("si")'>
+				    <div class="item-content">
+				    	{{tarjetas.brand}} ************{{tarjetas.last4}}
+				    </div>
+				    <i class="radio-icon ion-checkmark"></i>
+				  </label>
+				 </div>
+				  <label class="item item-radio"  ng-click='toggle("no")'>
+					<input type="radio" name="group" ng-model="compra.radio" value="nueva">
+				    <div class="item-content">
+				    	Agregar tarjeta
+				    </div>
+				    <i class="radio-icon ion-checkmark"></i>
+				  </label>
+				  
+				  
+				  
+				<div ng-hide="myVar" class="ng-hide">
+					<ul  class="list">
+						<li class="item item-toggle">
+							Guardar informacion
+						
+							<label class="toggle toggle-positive">
+							   <input type="checkbox" ng-model="compra.guardar">
+							   <div class="track">
+							     <div class="handle"></div>
+							   </div>
+							</label>
+						</li>
+					</ul>
+	  				<label class="item item-input">
+					    <input type="text" size="20" ng-model="compra.numero" data-stripe="number" placeholder="Card Number" value="4242424242424242"/>
+				    </label>
+				    <label class="item item-input">
+					    <input type="text" size="4" ng-model="compra.cvc" data-stripe="cvc" placeholder="CVC" value="111"/>
+				    </label>
+				    <label class="item item-input">
+					    <input type="text" size="2" ng-model="compra.mes" data-stripe="exp-month" placeholder="Expiration MM" value="08"/>
+				    </label>
+				    <label class="item item-input">
+					    <input type="text" size="4" ng-model="compra.anio" data-stripe="exp-year" placeholder="Expiration YYYY" value="2017"/>
+					</label>
+				</div>
+			</div>
+		  <button type="submit" ng-click="update(compra)" class="button button-positive">Submit Payment</button>
+		</form>
+		<p>form = {{compra}}</p>
+  <p>master = {{masterC}}</p>
+  <p>tarjetas = {{tarjetas}}</p>
+  <p>chat = {{chat | json}}</p>
+  <p>usuario = {{usuario| json}}</p>
+  <p>nohaytarjeta = {{nohaytarjeta}}</p>
+	</ion-content>
+</ion-view>

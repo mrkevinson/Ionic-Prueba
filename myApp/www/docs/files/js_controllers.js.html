@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>js\controllers.js - Documenting JavaScript with YUIDoc</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="Documenting JavaScript with YUIDoc" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0.0</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Chats.html">Chats</a></li>
+                                <li><a href="../classes/ChatsAddCtrl.html">ChatsAddCtrl</a></li>
+                                <li><a href="../classes/ChatsBuy.html">ChatsBuy</a></li>
+                                <li><a href="../classes/ChatsCtrl.html">ChatsCtrl</a></li>
+                                <li><a href="../classes/.html"></a></li>
+                                <li><a href="../classes/ChatsDetailCtrl.html">ChatsDetailCtrl</a></li>
+                                <li><a href="../classes/Contains functions for calling and declaring
+                &lt;a href=&quot;/docs/cloud_code_guide#functions&quot;&gt;cloud functions&lt;/a&gt;.
+                &lt;p&gt;&lt;strong&gt;&lt;em&gt;
+                  Some functions are only available from Cloud Code.
+                &lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;.&lt;p&gt;A fork of Backbone.Router, provided for your convenience.
+                For more information, see the
+                &lt;a href=&quot;http://documentcloud.github.com/backbone/#Router&quot;&gt;Backbone
+                documentation&lt;/a&gt;.&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;&lt;em&gt;Available in the client SDK only.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;.html">Contains functions for calling and declaring
+                &lt;a href=&quot;/docs/cloud_code_guide#functions&quot;&gt;cloud functions&lt;/a&gt;.
+                &lt;p&gt;&lt;strong&gt;&lt;em&gt;
+                  Some functions are only available from Cloud Code.
+                &lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;.&lt;p&gt;A fork of Backbone.Router, provided for your convenience.
+                For more information, see the
+                &lt;a href=&quot;http://documentcloud.github.com/backbone/#Router&quot;&gt;Backbone
+                documentation&lt;/a&gt;.&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;&lt;em&gt;Available in the client SDK only.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides a set of utilities for using Parse with Facebook..&lt;p&gt;A fork of Backbone.History, provided for your convenience.  If you 
+                use this class, you must also include jQuery, or another library 
+                that provides a jQuery-compatible $ function.  For more information,
+                see the &lt;a href=&quot;http://documentcloud.github.com/backbone/#History&quot;&gt;
+                Backbone documentation&lt;/a&gt;.&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;&lt;em&gt;Available in the client SDK only.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;.html">Provides a set of utilities for using Parse with Facebook..&lt;p&gt;A fork of Backbone.History, provided for your convenience.  If you 
+                use this class, you must also include jQuery, or another library 
+                that provides a jQuery-compatible $ function.  For more information,
+                see the &lt;a href=&quot;http://documentcloud.github.com/backbone/#History&quot;&gt;
+                Backbone documentation&lt;/a&gt;.&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;&lt;em&gt;Available in the client SDK only.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides a set of utilities for using Parse with Facebook..&lt;p&gt;Parse.Query defines a query that is used to fetch Parse.Objects. The
+                most common use case is finding all objects that match a query through the
+                &lt;code&gt;find&lt;/code&gt; method. For example, this sample code fetches all objects
+                of class &lt;code&gt;MyClass&lt;/code&gt;. It calls a different function depending on
+                whether the fetch succeeded or not.
+                
+                &lt;pre&gt;
+                var query = new Parse.Query(MyClass);
+                query.find({
+                  success: function(results) {
+                    // results is an array of Parse.Object.
+                  },
+                
+                  error: function(error) {
+                    // error is an instance of Parse.Error.
+                  }
+                });&lt;/pre&gt;&lt;/p&gt;
+                
+                &lt;p&gt;A Parse.Query can also be used to retrieve a single object whose id is
+                known, through the get method. For example, this sample code fetches an
+                object of class &lt;code&gt;MyClass&lt;/code&gt; and id &lt;code&gt;myId&lt;/code&gt;. It calls a
+                different function depending on whether the fetch succeeded or not.
+                
+                &lt;pre&gt;
+                var query = new Parse.Query(MyClass);
+                query.get(myId, {
+                  success: function(object) {
+                    // object is an instance of Parse.Object.
+                  },
+                
+                  error: function(object, error) {
+                    // error is an instance of Parse.Error.
+                  }
+                });&lt;/pre&gt;&lt;/p&gt;
+                
+                &lt;p&gt;A Parse.Query can also be used to count the number of objects that match
+                the query without retrieving all of those objects. For example, this
+                sample code counts the number of objects of the class &lt;code&gt;MyClass&lt;/code&gt;
+                &lt;pre&gt;
+                var query = new Parse.Query(MyClass);
+                query.count({
+                  success: function(number) {
+                    // There are number instances of MyClass.
+                  },
+                
+                  error: function(error) {
+                    // error is an instance of Parse.Error.
+                  }
+                });&lt;/pre&gt;&lt;/p&gt;.html">Provides a set of utilities for using Parse with Facebook..&lt;p&gt;Parse.Query defines a query that is used to fetch Parse.Objects. The
+                most common use case is finding all objects that match a query through the
+                &lt;code&gt;find&lt;/code&gt; method. For example, this sample code fetches all objects
+                of class &lt;code&gt;MyClass&lt;/code&gt;. It calls a different function depending on
+                whether the fetch succeeded or not.
+                
+                &lt;pre&gt;
+                var query = new Parse.Query(MyClass);
+                query.find({
+                  success: function(results) {
+                    // results is an array of Parse.Object.
+                  },
+                
+                  error: function(error) {
+                    // error is an instance of Parse.Error.
+                  }
+                });&lt;/pre&gt;&lt;/p&gt;
+                
+                &lt;p&gt;A Parse.Query can also be used to retrieve a single object whose id is
+                known, through the get method. For example, this sample code fetches an
+                object of class &lt;code&gt;MyClass&lt;/code&gt; and id &lt;code&gt;myId&lt;/code&gt;. It calls a
+                different function depending on whether the fetch succeeded or not.
+                
+                &lt;pre&gt;
+                var query = new Parse.Query(MyClass);
+                query.get(myId, {
+                  success: function(object) {
+                    // object is an instance of Parse.Object.
+                  },
+                
+                  error: function(object, error) {
+                    // error is an instance of Parse.Error.
+                  }
+                });&lt;/pre&gt;&lt;/p&gt;
+                
+                &lt;p&gt;A Parse.Query can also be used to count the number of objects that match
+                the query without retrieving all of those objects. For example, this
+                sample code counts the number of objects of the class &lt;code&gt;MyClass&lt;/code&gt;
+                &lt;pre&gt;
+                var query = new Parse.Query(MyClass);
+                query.count({
+                  success: function(number) {
+                    // There are number instances of MyClass.
+                  },
+                
+                  error: function(error) {
+                    // error is an instance of Parse.Error.
+                  }
+                });&lt;/pre&gt;&lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;
+                A class that is used to access all of the children of a many-to-many
+                relationship.  Each instance of Parse.Relation is associated with a
+                particular parent object and key.
+                &lt;/p&gt;.html">Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;
+                A class that is used to access all of the children of a many-to-many
+                relationship.  Each instance of Parse.Relation is associated with a
+                particular parent object and key.
+                &lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;A fork of Backbone.View, provided for your convenience.  If you use this
+                class, you must also include jQuery, or another library that provides a
+                jQuery-compatible $ function.  For more information, see the
+                &lt;a href=&quot;http://documentcloud.github.com/backbone/#View&quot;&gt;Backbone
+                documentation&lt;/a&gt;.&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;&lt;em&gt;Available in the client SDK only.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;.html">Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;A fork of Backbone.View, provided for your convenience.  If you use this
+                class, you must also include jQuery, or another library that provides a
+                jQuery-compatible $ function.  For more information, see the
+                &lt;a href=&quot;http://documentcloud.github.com/backbone/#View&quot;&gt;Backbone
+                documentation&lt;/a&gt;.&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;&lt;em&gt;Available in the client SDK only.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;A Parse.Session object is a local representation of a revocable session.
+                This class is a subclass of a Parse.Object, and retains the same
+                functionality of a Parse.Object.&lt;/p&gt;.html">Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;A Parse.Session object is a local representation of a revocable session.
+                This class is a subclass of a Parse.Object, and retains the same
+                functionality of a Parse.Object.&lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;A Parse.User object is a local representation of a user persisted to the
+                Parse cloud. This class is a subclass of a Parse.Object, and retains the
+                same functionality of a Parse.Object, but also extends it with various
+                user specific methods, like authentication, signing up, and validation of
+                uniqueness.&lt;/p&gt;.html">Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;A Parse.User object is a local representation of a user persisted to the
+                Parse cloud. This class is a subclass of a Parse.Object, and retains the
+                same functionality of a Parse.Object, but also extends it with various
+                user specific methods, like authentication, signing up, and validation of
+                uniqueness.&lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;An ACL, or Access Control List can be added to any
+                &lt;code&gt;Parse.Object&lt;/code&gt; to restrict access to only a subset of users
+                of your application.&lt;/p&gt;.html">Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;An ACL, or Access Control List can be added to any
+                &lt;code&gt;Parse.Object&lt;/code&gt; to restrict access to only a subset of users
+                of your application.&lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;Class used for all objects passed to error callbacks.&lt;/p&gt;.html">Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;Class used for all objects passed to error callbacks.&lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;Parse.Events is a fork of Backbone&#x27;s Events module, provided for your
+                convenience.&lt;/p&gt;
+                
+                &lt;p&gt;A module that can be mixed in to any object in order to provide
+                it with custom events. You may bind callback functions to an event
+                with &#x60;on&#x60;, or remove these functions with &#x60;off&#x60;.
+                Triggering an event fires all callbacks in the order that &#x60;on&#x60; was
+                called.
+                
+                &lt;pre&gt;
+                    var object = {};
+                    _.extend(object, Parse.Events);
+                    object.on(&#x27;expand&#x27;, function(){ alert(&#x27;expanded&#x27;); });
+                    object.trigger(&#x27;expand&#x27;);&lt;/pre&gt;&lt;/p&gt;
+                
+                &lt;p&gt;For more information, see the
+                &lt;a href=&quot;http://documentcloud.github.com/backbone/#Events&quot;&gt;Backbone
+                documentation&lt;/a&gt;.&lt;/p&gt;.html">Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;Parse.Events is a fork of Backbone&#x27;s Events module, provided for your
+                convenience.&lt;/p&gt;
+                
+                &lt;p&gt;A module that can be mixed in to any object in order to provide
+                it with custom events. You may bind callback functions to an event
+                with &#x60;on&#x60;, or remove these functions with &#x60;off&#x60;.
+                Triggering an event fires all callbacks in the order that &#x60;on&#x60; was
+                called.
+                
+                &lt;pre&gt;
+                    var object = {};
+                    _.extend(object, Parse.Events);
+                    object.on(&#x27;expand&#x27;, function(){ alert(&#x27;expanded&#x27;); });
+                    object.trigger(&#x27;expand&#x27;);&lt;/pre&gt;&lt;/p&gt;
+                
+                &lt;p&gt;For more information, see the
+                &lt;a href=&quot;http://documentcloud.github.com/backbone/#Events&quot;&gt;Backbone
+                documentation&lt;/a&gt;.&lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;Provides a standard collection class for our sets of models, ordered
+                or unordered.  For more information, see the
+                &lt;a href=&quot;http://documentcloud.github.com/backbone/#Collection&quot;&gt;Backbone
+                documentation&lt;/a&gt;.&lt;/p&gt;.html">Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;Provides a standard collection class for our sets of models, ordered
+                or unordered.  For more information, see the
+                &lt;a href=&quot;http://documentcloud.github.com/backbone/#Collection&quot;&gt;Backbone
+                documentation&lt;/a&gt;.&lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;Represents a latitude / longitude point that may be associated
+                with a key in a ParseObject or used as a reference point for geo queries.
+                This allows proximity-based queries on the key.&lt;/p&gt;
+                
+                &lt;p&gt;Only one key in a class may contain a GeoPoint.&lt;/p&gt;
+                
+                &lt;p&gt;Example:&lt;pre&gt;
+                  var point = new Parse.GeoPoint(30.0, -20.0);
+                  var object = new Parse.Object(&quot;PlaceObject&quot;);
+                  object.set(&quot;location&quot;, point);
+                  object.save();&lt;/pre&gt;&lt;/p&gt;.html">Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;Represents a latitude / longitude point that may be associated
+                with a key in a ParseObject or used as a reference point for geo queries.
+                This allows proximity-based queries on the key.&lt;/p&gt;
+                
+                &lt;p&gt;Only one key in a class may contain a GeoPoint.&lt;/p&gt;
+                
+                &lt;p&gt;Example:&lt;pre&gt;
+                  var point = new Parse.GeoPoint(30.0, -20.0);
+                  var object = new Parse.Object(&quot;PlaceObject&quot;);
+                  object.set(&quot;location&quot;, point);
+                  object.save();&lt;/pre&gt;&lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;The fundamental unit of Parse data, which implements the Backbone Model
+                interface.&lt;/p&gt;.html">Provides an interface to Parse&#x27;s logging and analytics backend..&lt;p&gt;The fundamental unit of Parse data, which implements the Backbone Model
+                interface.&lt;/p&gt;</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..A Parse.Op is an atomic operation that can be applied to a field in a
+                Parse.Object. For example, calling &lt;code&gt;object.set(&quot;foo&quot;, &quot;bar&quot;)&lt;/code&gt;
+                is an example of a Parse.Op.Set. Calling &lt;code&gt;object.unset(&quot;foo&quot;)&lt;/code&gt;
+                is a Parse.Op.Unset. These operations are stored in a Parse.Object and
+                sent to the server as part of &lt;code&gt;object.save()&lt;/code&gt; operations.
+                Instances of Parse.Op should be immutable.
+                
+                You should not create subclasses of Parse.Op or instantiate Parse.Op
+                directly..html">Provides an interface to Parse&#x27;s logging and analytics backend..A Parse.Op is an atomic operation that can be applied to a field in a
+                Parse.Object. For example, calling &lt;code&gt;object.set(&quot;foo&quot;, &quot;bar&quot;)&lt;/code&gt;
+                is an example of a Parse.Op.Set. Calling &lt;code&gt;object.unset(&quot;foo&quot;)&lt;/code&gt;
+                is a Parse.Op.Unset. These operations are stored in a Parse.Object and
+                sent to the server as part of &lt;code&gt;object.save()&lt;/code&gt; operations.
+                Instances of Parse.Op should be immutable.
+                
+                You should not create subclasses of Parse.Op or instantiate Parse.Op
+                directly.</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..A Parse.Role is a local representation of a role persisted to the Parse
+                cloud..html">Provides an interface to Parse&#x27;s logging and analytics backend..A Parse.Role is a local representation of a role persisted to the Parse
+                cloud.</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..A Relation operation indicates that the field is an instance of
+                Parse.Relation, and objects are being added to, or removed from, that
+                relation..html">Provides an interface to Parse&#x27;s logging and analytics backend..A Relation operation indicates that the field is an instance of
+                Parse.Relation, and objects are being added to, or removed from, that
+                relation.</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..A Set operation indicates that either the field was changed using
+                Parse.Object.set, or it is a mutable container that was detected as being
+                changed..html">Provides an interface to Parse&#x27;s logging and analytics backend..A Set operation indicates that either the field was changed using
+                Parse.Object.set, or it is a mutable container that was detected as being
+                changed.</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..Add is an atomic operation where the given objects will be appended to the
+                array that is stored in this field..html">Provides an interface to Parse&#x27;s logging and analytics backend..Add is an atomic operation where the given objects will be appended to the
+                array that is stored in this field.</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..AddUnique is an atomic operation where the given items will be appended to
+                the array that is stored in this field only if they were not already
+                present in the array..html">Provides an interface to Parse&#x27;s logging and analytics backend..AddUnique is an atomic operation where the given items will be appended to
+                the array that is stored in this field only if they were not already
+                present in the array.</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..An Increment is an atomic operation where the numeric value for the field
+                will be increased by a given amount..html">Provides an interface to Parse&#x27;s logging and analytics backend..An Increment is an atomic operation where the numeric value for the field
+                will be increased by a given amount.</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..An Unset operation indicates that this field has been deleted from the
+                object..html">Provides an interface to Parse&#x27;s logging and analytics backend..An Unset operation indicates that this field has been deleted from the
+                object.</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..Parse.Config is a local representation of configuration data that
+                can be set from the Parse dashboard..html">Provides an interface to Parse&#x27;s logging and analytics backend..Parse.Config is a local representation of configuration data that
+                can be set from the Parse dashboard.</a></li>
+                                <li><a href="../classes/Provides an interface to Parse&#x27;s logging and analytics backend..Remove is an atomic operation where the given objects will be removed from
+                the array that is stored in this field..html">Provides an interface to Parse&#x27;s logging and analytics backend..Remove is an atomic operation where the given objects will be removed from
+                the array that is stored in this field.</a></li>
+                                <li><a href="../classes/Usuarios.html">Usuarios</a></li>
+                            </ul>
+                
+                            <ul id="api-modules" class="apis modules">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: js\controllers.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+angular.module(&#x27;starter.controllers&#x27;, [])
+
+.controller(&#x27;DashCtrl&#x27;, function($scope) {})
+
+/**
+ * Manejo de la pagina de muestra de los chats
+ * @class ChatsCtrl
+ * 
+ */
+.controller(&#x27;ChatsCtrl&#x27;, function($scope, Chats) {
+
+	/**
+	 * Esto se realiza al entrar a la pagina mostrando cada chat que hay
+	 * @event load
+	 */
+    Parse.initialize(&quot;1xCXPxq3rekSBzr3EFvzB2hcpUud0KyDzAU14ulF&quot;, &quot;SzviBY50XswUAkAXq1ARlG0eyjTaRbcVUJjRsnkG&quot;); 
+	var query = Chats.all();
+	query.find({
+	  success: function(results) {
+	  	 $scope.$apply(function () {
+        	$scope.chats = results;    
+        });
+	    
+	  },
+	  error: function(error) {
+	  }
+	});
+  $scope.chats =Chats.all();
+  
+  /**
+   * Llama al metodo para eliminar cuando se lanze el evento
+   * @event remove
+   * @param chatid {string} Id para identificar el chat a eliminar
+   */
+  
+  $scope.remove = function(chatid) {
+    			Chats.remove(chatid);
+  			};
+})
+
+/**
+ * Manejo de la pagina para el detalle del Chat
+ * @class ChatsDetailCtrl
+ * 
+ */
+
+.controller(&#x27;ChatDetailCtrl&#x27;, function($scope, $stateParams, Chats ) {
+	
+	/**
+	 * Este evento muestra la informacion del chat
+	 * @event load
+	 */
+	
+	var query = Chats.get();
+	query.get($stateParams.chatId,{
+		success : function(chat)
+		{
+			$scope.$apply(function () {
+            	$scope.chat = chat;
+        	});
+			
+		},
+		error : function (object, error) {
+		  
+		}
+	});
+
+})
+
+.controller(&#x27;AccountCtrl&#x27;, function($scope) {
+  $scope.settings = {
+    enableFriends: true
+  };
+})
+
+/**
+ * Manejo de la pagina para agregar chats
+ * @class ChatsAddCtrl
+ * 
+ */
+
+.controller(&#x27;ChatAdd&#x27;, function($scope, $stateParams, Chats) {
+  
+  /**
+   * Este evento crea la variable para trabajar
+   * @event load
+   */
+  
+  $scope.master = {};
+
+
+/** 
+ * Este evento ocurre al momento de enviar la informacion
+ * y sirve para guardar la informacion.
+ * @event update
+ */
+
+      $scope.update = function(user) {
+      	$scope.$apply(function(){nuevoObjeto = angular.copy(user);});
+        
+        $scope.master = angular.copy(user);
+      	Chats.add($scope.master);
+      };
+/** 
+ * Este evento ocurre al momento de hacer click en el boton reset
+ * y sirve para borrar toda la informacion
+ * @event reset
+ */
+      $scope.reset = function() {
+        $scope.user = angular.copy($scope.master);
+      };
+
+      $scope.reset();
+  
+})
+
+/**
+ * Manejo de la pagina para realizar las compras
+ * @class ChatsBuy
+ * 
+ */
+.controller(&#x27;ChatBuy&#x27;, function($scope, $stateParams, $ionicPopup, Chats, Usuarios) {
+	
+	/**
+	 * Este evento obtiene la informacion minima para trabajar
+     * @event load
+     */
+	var query = Chats.get();
+	query.get($stateParams.chatId,{
+		success : function(chat)
+		{
+			$scope.$apply(function () {
+            	$scope.chat = chat;
+        	});
+			
+		},
+		error : function (object, error) {
+		  
+		}
+	});
+  var query = Usuarios.get();
+  query.get(&quot;GXYKilHC3K&quot;, {
+	success: function(usuario) {
+		$scope.$apply(function () {
+	        $scope.usuario= usuario;
+	        if($scope.usuario.get(&#x27;stripeCardId&#x27;)== &quot;&quot; | $scope.usuario.get(&#x27;stripeCardId&#x27;) == null | $scope.usuario.get(&#x27;stripeCardId&#x27;) == undefined)
+			{
+				$scope.nohaytarjeta =&quot;true&quot;;
+				$scope.toggle(&#x27;notarjeta&#x27;);
+				$scope.toggle(&quot;si&quot;);
+			}
+			else
+			{
+				$scope.nohaytarjeta = &quot;false&quot;;
+			}
+			try{
+	        stripe.customers.retrieveCard(
+			  usuario.get(&#x27;stripeId&#x27;),
+			  usuario.get(&#x27;stripeCardId&#x27;),
+			  function(result){
+			     $scope.$apply(function () {
+			     $scope.tarjetas = result;
+			     alert(JSON.stringify($scope.tarjetas));
+			     });
+			  });
+			  }catch(err){$scope.tarjetas == null;}
+		});
+	},
+	error: function(object, error) {
+		alert(error);
+	}
+  });
+	
+	
+  $scope.masterC = {};
+  var prueba = &quot;no&quot;;
+  
+  /**
+   * Este evento se encarga de mostrar/ocultar el formulario desplegable
+   * @event toggle
+   */
+  $scope.toggle = function(text) {
+  	
+  	if(text == &quot;notarjeta&quot;)
+    {
+    	$scope.tarjeta = !$scope.tarjeta;
+    }
+    else
+    {
+	  	if(text != prueba)
+	  	{
+	  		prueba = text;
+	        $scope.myVar = !$scope.myVar;
+	    }
+    }
+ };
+  $scope.toggle(&quot;si&quot;);
+  
+  /**
+   * Sirve para mandar la informacion del formulario
+   * @event update
+   * @param {Object} compra 
+   * Contiene la informacion de los datos, ya sea la informacion de una tarjeta, si se va a usar una tarjeta guardada en stripe o si se actualizara la tarjeta de stripe del cliente.
+   */
+  
+  $scope.update = function(compra) {
+  	
+  	/**
+  	 * Sirve para realizar la compra del articulo (teniendo la informacion de la tarjeta)
+	 * @param {Object} usuario
+	 * Contiene toda la informacion de la tarjeta en Stripe
+  	 */
+        function realizaCargo(usuario){
+        	stripe.charges.create({
+       				customer: usuario.get(&#x27;stripeId&#x27;),
+				    amount : $scope.chat.get(&quot;Precio&quot;)*100,
+				    currency : &#x27;usd&#x27;,
+				    source : usuario.get(&#x27;stripeCardId&#x27;),
+				    description : &quot;Compra de &quot;+$scope.chat.get(&quot;Nombre&quot;)
+				  },
+				  function(result){
+				     alert(JSON.stringify(result));
+				  });
+        }
+        
+        
+        
+        
+        $scope.masterC = angular.copy(compra);
+        try
+        {
+        if($scope.masterC.radio != &quot;nueva&quot;)
+       	{
+       		realizaCargo($scope.usuario);
+       	}
+       	else{
+	      	if($scope.masterC.guardar == true)
+	      	{
+	      		
+		      		if($scope.nohaytarjeta == &quot;false&quot;)
+		      		{
+		      			
+		      			stripe.customers.removeCard($scope.usuario.get(&#x27;stripeId&#x27;),$scope.usuario.get(&#x27;stripeCardId&#x27;),
+					    function (response) {var query = Usuarios.get();
+								query.get($scope.usuario.id, {
+								  success: function(gameScore) {
+								  	alert(JSON.stringify(gameScore));
+								  	
+								  		gameScore.set(&quot;stripeCardId&quot;, &quot;&quot;);
+						    		 gameScore.save(null, {
+								  success: function(gameScore1) {
+								  	stripe.customers.createCard($scope.usuario.get(&#x27;stripeId&#x27;),{
+									    card : {
+									       number : $scope.masterC.numero,
+									       exp_month : $scope.masterC.mes,
+									       exp_year : $scope.masterC.anio,
+									       cvc : $scope.masterC.cvc
+									    }
+										  },
+										  function(result){
+										  		alert(JSON.stringify(result));
+										  		try{
+										  		var query = Usuarios.get();
+												query.get($scope.usuario.id, {
+												  success: function(gameScore) {
+												  	alert(JSON.stringify(gameScore));
+												  	
+												  		gameScore.set(&quot;stripeCardId&quot;, result.id);
+										    		 gameScore.save(null, {
+												  success: function(gameScore1) {
+												  	alert(&quot;Informacion actualizada :D&quot;);
+												  	realizaCargo(gameScore1);
+												  }
+										     });
+												  },
+												  error: function(object, error) {
+												  	alert(&quot;No se pudo &quot;+ error);
+												  }
+												});
+												}catch(err){alert(err);}
+										  }
+									);
+								  }
+						     });
+								  },
+								  error: function(object, error) {
+								  	alert(&quot;No se pudo &quot;+ error);
+								  }
+								});},
+					    function(response) {alert(JSON.stringify(response));}  // error handler
+						);
+		      		}
+		      		else
+		      		{
+			      		stripe.customers.createCard($scope.usuario.get(&#x27;stripeId&#x27;),{
+						    card : {
+						       number : $scope.masterC.numero,
+						       exp_month : $scope.masterC.mes,
+						       exp_year : $scope.masterC.anio,
+						       cvc : $scope.masterC.cvc
+						    }
+						  },
+						  function(result){
+						  		alert(JSON.stringify(result));
+						  		try{
+						  		var query = Usuarios.get();
+								query.get($scope.usuario.id, {
+								  success: function(gameScore) {
+								  	alert(JSON.stringify(gameScore));
+								  	
+								  		gameScore.set(&quot;stripeCardId&quot;, result.id);
+						    		 gameScore.save(null, {
+								  success: function(gameScore1) {
+								  	alert(&quot;Informacion actualizada :D&quot;);
+								  	realizaCargo(gameScore1);
+								  }
+						     });
+								  },
+								  error: function(object, error) {
+								  	alert(&quot;No se pudo &quot;+ error);
+								  }
+								});
+								}catch(err){alert(err);}
+						  });
+				  	}
+	      	}
+	      	else{
+	      		stripe.charges.create({
+				    amount : $scope.chat.get(&quot;Precio&quot;)*100,
+				    currency : &#x27;usd&#x27;,
+				    card : {
+				      number : $scope.masterC.numero,
+				      exp_month : $scope.masterC.mes,
+				      exp_year : $scope.masterC.anio,
+				      cvc : $scope.masterC.cvc,
+				      name : $scope.usuario.get(&#x27;nombre&#x27;)
+				    },
+				    description : &quot;Compra de &quot;+$scope.chat.get(&quot;Nombre&quot;)
+				  },
+				  function(result){
+				     alert(JSON.stringify(result));
+				  });
+	      	}
+      	}
+      }catch(err){alert(err);}
+      };
+  
+
+      
+});
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

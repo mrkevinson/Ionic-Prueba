@@ -1,14 +1,13 @@
-<!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
--->
+
 <ion-view view-title="{{chat.get('Nombre')}}">
   <ion-content class="padding">
     <img ng-src="{{chat.get('Imagen')}}" style="width: 64px; height: 64px">
     <p>
       {{chat.get('UltimoMensaje')}}
     </p>
+    <form method="POST">
+
+</form>
+	<a class="button button-full button-positive" href="#/tab/chats/buy/{{chat.id}}">Malgasta tu dinero en mi :D solo cuesto {{chat.get('Precio')}} dolares</a>
   </ion-content>
 </ion-view>
