@@ -1,6 +1,13 @@
+/*googleanalyticsApp.controller('AwesomeController', function($scope) {
+    
+});*/
+
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope) {
+		
+
+})
 
 /**
  * Manejo de la pagina de muestra de los chats
@@ -9,10 +16,45 @@ angular.module('starter.controllers', [])
  */
 .controller('ChatsCtrl', function($scope, Chats) {
 
+
+	try
+	{
+		if(typeof analytics !== undefined) {
+    	analytics.startTrackerWithId("UA-63689312-1");
+	} else {
+		console.log("Google Analytics Unavailable");
+	}}catch(err){alert("Holi "+err);}
+
+	try{
+	if(typeof analytics !== undefined) { analytics.trackView("ChatsCtrl"); alert('Este es el ChatsCtrl');}
+ 
+    $scope.initEvent = function() {
+        if(typeof analytics !== undefined) { analytics.trackEvent("Category", "Action", "Label", 25); }
+    };
+	/*$cordovaGoogleAnalytics.debugMode();
+	$cordovaGoogleAnalytics.startTrackerWithId('UA-63689312-1');
+  	$cordovaGoogleAnalytics.setUserId('USER_ID');
+	$cordovaGoogleAnalytics.trackView('Home Screen');
+	$cordovaGoogleAnalytics.addCustomDimension('dimension1', 'Level 1');*/
+
+	}catch(err){alert("No se que fallo :( " +err);}
+
+
+
+
+
+
+
+
+
 	/**
 	 * Esto se realiza al entrar a la pagina mostrando cada chat que hay
 	 * @event load
 	 */
+	try{
+		
+		window.analytics.trackView(location.pathname);}
+		catch(err){alert(err);}
     Parse.initialize("1xCXPxq3rekSBzr3EFvzB2hcpUud0KyDzAU14ulF", "SzviBY50XswUAkAXq1ARlG0eyjTaRbcVUJjRsnkG"); 
 	var query = Chats.all();
 	query.find({
@@ -67,7 +109,44 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('AccountCtrl', function($scope, Usuarios) {
+	var query = Usuarios.get();
+// Send the dimensions to Parse along with the 'search' event
+
+	query.get("GXYKilHC3K", {
+		 success: function(gameScore) {
+		 	$scope.$apply(function()
+		 	{
+		 		$scope.miusuario = gameScore;
+		 		$scope.checked = gameScore.get("Admin");
+		 		var Roles = Parse.Object.extend("Roles");
+				var queryR = new Parse.Query(Roles);
+		 		queryR.get($scope.miusuario.get("rolesId").id, {
+				 success: function(gameScore) {
+				 	$scope.$apply(function(){
+				 		if($scope.miusuario.get("Admin") == true)
+				 		{
+				 		$scope.rol = gameScore.get("Nombre");				 	
+				 	
+				 		alert("Listo " + JSON.stringify($scope.rol));
+				 		}
+				 	});
+				 		
+				},
+					error: function(object, error) {
+						alert("No se pudo "+ JSON.stringify(error));
+					}
+				});
+			});
+				 	
+		 	
+		 	alert("Listo " + JSON.stringify($scope.checked));
+		},
+		error: function(object, error) {
+			alert("No se pudo "+ JSON.stringify(error));
+		}
+	});
+	
   $scope.settings = {
     enableFriends: true
   };

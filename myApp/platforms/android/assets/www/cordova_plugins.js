@@ -67,6 +67,13 @@ module.exports = [
         "clobbers": [
             "stripe.transfers"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-google-analytics/www/analytics.js",
+        "id": "cordova-plugin-google-analytics.UniversalAnalytics",
+        "clobbers": [
+            "analytics"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -77,7 +84,9 @@ module.exports.metadata =
     "cordova-plugin-device": "1.0.0",
     "cordova-plugin-splashscreen": "2.0.0",
     "cordova-plugin-whitelist": "1.0.0",
-    "com.telerik.stripe": "1.0.5"
+    "com.telerik.stripe": "1.0.5",
+    "cordova-plugin-google-analytics": "0.7.2",
+    "com.google.playservices": "19.0.0"
 }
 // BOTTOM OF METADATA
 });

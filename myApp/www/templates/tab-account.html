@@ -1,7 +1,16 @@
 <ion-view view-title="Account">
   <ion-content>
     <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
+    <img src="{{miusuario.get('foto')}}" width="100px" height="100px" style="float:left">
+    <div style="float:left;">
+    	{{miusuario.get('nombre')}}
+    </div>
+    <div type="checkbox" ng-model="checked"></div><br/>
+    <span ng-if="checked==true" class="animate-if">
+	  {{rol}}
+	</span>
+    <br>
+    <ion-toggle  ng-model="settings.enableFriends" style="float:clear">
         Enable Friends
     </ion-toggle>
     </ion-list>
